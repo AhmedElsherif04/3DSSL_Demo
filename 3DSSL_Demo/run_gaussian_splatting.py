@@ -3,7 +3,7 @@ from argparse import ArgumentParser
 from pathlib import Path
 
 import numpy as np
-import pyvista as pv
+#import pyvista as pv
 import torch
 from PIL import Image
 from dreifus.camera import CameraCoordinateConvention, PoseType
@@ -57,11 +57,11 @@ if __name__ == '__main__':
     # ==========================================================
 
     # Visualize camera poses and images
-    p = pv.Plotter()
+   # p = pv.Plotter()
     add_coordinate_axes(p, scale=0.1)
     for serial in serials:
         add_camera_frustum(p, cam_2_world_poses[serial], intrinsics, image=images[serial])
-    p.show()
+   # p.show()
 
     # ==========================================================
     # Model
