@@ -58,9 +58,9 @@ if __name__ == '__main__':
 
     # Visualize camera poses and images
    # p = pv.Plotter()
-    add_coordinate_axes(p, scale=0.1)
-    for serial in serials:
-        add_camera_frustum(p, cam_2_world_poses[serial], intrinsics, image=images[serial])
+    #add_coordinate_axes(p, scale=0.1)
+    #for serial in serials:
+    #    add_camera_frustum(p, cam_2_world_poses[serial], intrinsics, image=images[serial])
    # p.show()
 
     # ==========================================================
